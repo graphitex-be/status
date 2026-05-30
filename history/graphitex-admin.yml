@@ -1,7 +1,7 @@
-url: https://admin.graphitex.be/actuator/health
-status: down
-code: 0
-responseTime: 0
-lastUpdated: 2026-05-30T20:03:16.594Z
+url: https://admin.graphitex.com/actuator/health
+status: up
+code: 200
+responseTime: 629
+lastUpdated: 2026-05-30T20:05:19.644Z
 startTime: 2026-05-30T19:51:59.944Z
 generator: Upptime <https://github.com/upptime/upptime>
