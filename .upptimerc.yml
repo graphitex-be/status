@@ -49,7 +49,7 @@ status-website:
   name: Graphitex status
   # cname: status.graphitex.be   # Custom domain (CNAME)
   # baseUrl: /status             # Use when on GitHub Pages without custom domain
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
+  logoUrl: https://www.graphitex.com/favicon-192.png
   # favicon: https://graphitex.com/favicon.png
   # faviconSvg: https://graphitex.com/logo.svg
   introTitle: "**Graphitex** service status"
