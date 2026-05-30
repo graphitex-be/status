@@ -5,16 +5,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/www.graphitex.com.ico",
     "slug": "graphitex-com",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "uptime": "66.82%",
+    "uptimeDay": "66.82%",
+    "uptimeWeek": "66.82%",
+    "uptimeMonth": "66.82%",
+    "uptimeYear": "66.82%",
     "time": 78,
     "timeDay": 78,
     "timeWeek": 78,
     "timeMonth": 78,
     "timeYear": 78,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-05-30": 0
+    }
   }
 ]
