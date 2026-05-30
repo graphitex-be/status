@@ -5,38 +5,36 @@
     "icon": "https://icons.duckduckgo.com/ip3/graphitex.com.ico",
     "slug": "graphitex-com",
     "status": "up",
-    "uptime": "89.42%",
-    "uptimeDay": "89.42%",
-    "uptimeWeek": "89.42%",
-    "uptimeMonth": "89.42%",
-    "uptimeYear": "89.42%",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
     "time": 638,
     "timeDay": 638,
     "timeWeek": 638,
     "timeMonth": 638,
     "timeYear": 638,
-    "dailyMinutesDown": {
-      "2026-05-30": 2
-    }
+    "dailyMinutesDown": {}
   },
   {
     "name": "Graphitex Admin",
-    "url": "https://admin.graphitex.be/actuator/health",
-    "icon": "https://icons.duckduckgo.com/ip3/admin.graphitex.be.ico",
+    "url": "https://admin.graphitex.com/actuator/health",
+    "icon": "https://icons.duckduckgo.com/ip3/admin.graphitex.com.ico",
     "slug": "graphitex-admin",
-    "status": "down",
-    "uptime": "3.41%",
-    "uptimeDay": "3.41%",
-    "uptimeWeek": "3.41%",
-    "uptimeMonth": "3.41%",
-    "uptimeYear": "3.41%",
-    "time": 0,
-    "timeDay": 0,
-    "timeWeek": 0,
-    "timeMonth": 0,
-    "timeYear": 0,
+    "status": "up",
+    "uptime": "3.17%",
+    "uptimeDay": "3.17%",
+    "uptimeWeek": "3.17%",
+    "uptimeMonth": "3.17%",
+    "uptimeYear": "3.17%",
+    "time": 629,
+    "timeDay": 629,
+    "timeWeek": 629,
+    "timeMonth": 629,
+    "timeYear": 629,
     "dailyMinutesDown": {
-      "2026-05-30": 11
+      "2026-05-30": 13
     }
   }
 ]
