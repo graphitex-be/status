@@ -10,11 +10,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 638,
-    "timeDay": 638,
-    "timeWeek": 638,
-    "timeMonth": 638,
-    "timeYear": 638,
+    "time": 666,
+    "timeDay": 666,
+    "timeWeek": 666,
+    "timeMonth": 666,
+    "timeYear": 666,
     "dailyMinutesDown": {}
   },
   {
@@ -23,18 +23,16 @@
     "icon": "https://icons.duckduckgo.com/ip3/admin.graphitex.com.ico",
     "slug": "graphitex-admin",
     "status": "up",
-    "uptime": "3.17%",
-    "uptimeDay": "3.17%",
-    "uptimeWeek": "3.17%",
-    "uptimeMonth": "3.17%",
-    "uptimeYear": "3.17%",
-    "time": 629,
-    "timeDay": 629,
-    "timeWeek": 629,
-    "timeMonth": 629,
-    "timeYear": 629,
-    "dailyMinutesDown": {
-      "2026-05-30": 13
-    }
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 699,
+    "timeDay": 699,
+    "timeWeek": 699,
+    "timeMonth": 699,
+    "timeYear": 699,
+    "dailyMinutesDown": {}
   }
 ]
