@@ -1,21 +1,116 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# Upptime configuration — full reference
+# Docs: https://upptime.js.org/docs/configuration
 
+# ─── Required ──────────────────────────────────────────────────────────────
+owner: graphitex-be # GitHub organization or username where this repo lives
+repo: status # Name of this repository
+
+# ─── Monitored endpoints ─────────────────────────────────────────────────────
 sites:
   - name: Graphitex.com
     url: https://graphitex.com/actuator/health
+    # slug: graphitex-com          # Unique id (auto-generated from name if omitted)
+    # method: GET                  # HTTP verb (default GET)
+    # headers:                     # Custom request headers ($SECRET refs allowed)
+    #   - "Authorization: Bearer $SECRET_TOKEN"
+    # body: '{"key": "value"}'     # Request payload
+    expectedStatusCodes:
+      - 200
+    maxResponseTime: 5000 # ms before status is "degraded"
+    # icon: https://graphitex.com/favicon.ico
+    # assignees:                   # Per-site downtime issue assignees
+    #   - Fllorent0D
+    # __dangerous__body_down_if_text_missing: '"status":"UP"'
+
   - name: Graphitex Admin
     url: https://admin.graphitex.be/actuator/health
+    expectedStatusCodes:
+      - 200
+    maxResponseTime: 5000
+    # __dangerous__body_down_if_text_missing: '"status":"UP"'
 
-status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  # cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Graphitex website status
-assignees: # Users to assign downtime issues (optional)
+# ─── Global options ──────────────────────────────────────────────────────────
+user-agent: Fllorent0D # Sent with GitHub API requests
+delay: 2000 # ms between endpoint checks
+# runner: ubuntu-latest          # GitHub Actions runner (or self-hosted)
+
+# Skip repo metadata auto-updates (optional)
+# skipDescriptionUpdate: false
+# skipTopicsUpdate: false
+# skipHomepageUpdate: false
+# skipDeleteIssues: false
+
+# Users assigned to all downtime issues
+assignees:
   - Fllorent0D
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+
+# ─── Status website ──────────────────────────────────────────────────────────
+status-website:
+  name: Graphitex status
+  # cname: status.graphitex.be   # Custom domain (CNAME)
+  # baseUrl: /status             # Use when on GitHub Pages without custom domain
+  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
+  # favicon: https://graphitex.com/favicon.png
+  # faviconSvg: https://graphitex.com/logo.svg
+  introTitle: "**Graphitex** service status"
+  introMessage: "Real-time and historical uptime data for Graphitex services."
+  theme: light # light | dark | night | ocean
+  # themeUrl: https://example.com/custom-theme.css
+  navbar:
+    - title: Status
+      href: /
+    - title: GitHub
+      href: https://github.com/$OWNER/$REPO
+  # customHeadHtml: ""
+  # customBodyHtml: ""
+  # customFootHtml: ""
+  # scripts:
+  #   - src: https://example.com/script.js
+  #     async: true
+  # js: ""
+  # links:
+  #   - rel: stylesheet
+  #     href: https://example.com/styles.css
+  # css: ""
+  # metaTags:
+  #   - name: "robots"
+  #     content: "noindex"
+  # apiBaseUrl: https://api.github.com
+  # userContentBaseUrl: https://raw.githubusercontent.com
+  # robotsText: "User-agent: *\nDisallow: /"
+
+# ─── Notifications (configure secrets in repo settings) ──────────────────────
+# Supported: Slack, Telegram, Discord, email, Twilio SMS, and more.
+# See https://upptime.js.org/docs/notifications
+# notifications:
+#   - type: slack
+#     channel: "#status"
+#   - type: telegram
+#     token: $TELEGRAM_BOT_TOKEN
+#   - type: email
+#     smtpHost: smtp.example.com
+
+# ─── Internationalization (README localization) ──────────────────────────────
+# i18n:
+#   activeIncidents: Active incidents
+#   allSystemsOperational: All systems operational
+#   footer: "© Graphitex"
+
+# ─── Commit messages ─────────────────────────────────────────────────────────
+# commitMessages:
+#   readmeContent: ":pencil: Update summary in README [skip ci]"
+#   summaryJson: ":card_file_box: Update status summary [skip ci]"
+#   statusChange: "$EMOJI $SITE_NAME is $STATUS"
+#   graphsUpdate: ":bento: Update graphs [skip ci]"
+#   commitAuthorName: "Upptime Bot"
+#   commitAuthorEmail: "upptime@koj.co"
+
+# ─── Workflow schedules (cron; GitHub min interval is 5 min) ─────────────────
+# workflowSchedule:
+#   graphs: "0 0 * * *"
+#   responseTime: "0 23 * * *"
+#   staticSite: "0 1 * * *"
+#   summary: "0 0 * * *"
+#   updateTemplate: "0 0 * * *"
+#   updates: "0 3 * * *"
+#   uptime: "*/5 * * * *"
