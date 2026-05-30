@@ -48,7 +48,7 @@ assignees:
 status-website:
   name: Graphitex status
   # cname: status.graphitex.be   # Custom domain (CNAME)
-  # baseUrl: /status             # Use when on GitHub Pages without custom domain
+  baseUrl: /status # Repo is served at github.io/status/ (no custom domain)
   logoUrl: https://www.graphitex.com/favicon-192.png
   # favicon: https://graphitex.com/favicon.png
   # faviconSvg: https://graphitex.com/logo.svg
