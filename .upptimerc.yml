@@ -90,11 +90,31 @@ status-website:
 #   - type: email
 #     smtpHost: smtp.example.com
 
-# ─── Internationalization (README localization) ──────────────────────────────
-# i18n:
-#   activeIncidents: Active incidents
-#   allSystemsOperational: All systems operational
-#   footer: "© Graphitex"
+# ─── Internationalization (fr-BE) ────────────────────────────────────────────
+i18n:
+  up: En ligne
+  down: Hors ligne
+  degraded: Dégradé
+  url: URL
+  status: Statut
+  history: Historique
+  ms: ms
+  responseTime: Temps de réponse
+  responseTimeDay: Temps de réponse (24 h)
+  responseTimeWeek: Temps de réponse (7 jours)
+  responseTimeMonth: Temps de réponse (30 jours)
+  responseTimeYear: Temps de réponse (1 an)
+  uptime: Disponibilité
+  uptimeDay: Disponibilité (24 h)
+  uptimeWeek: Disponibilité (7 jours)
+  uptimeMonth: Disponibilité (30 jours)
+  uptimeYear: Disponibilité (1 an)
+  responseTimeGraphAlt: Graphique du temps de réponse
+  liveStatus: Statut en direct
+  allSystemsOperational: Tous les systèmes sont opérationnels
+  degradedPerformance: Performances dégradées
+  completeOutage: Panne totale
+  partialOutage: Panne partielle
 
 # ─── Commit messages ─────────────────────────────────────────────────────────
 # commitMessages:
