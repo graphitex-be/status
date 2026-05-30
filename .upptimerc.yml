@@ -23,7 +23,7 @@ sites:
     # __dangerous__body_down_if_text_missing: '"status":"UP"'
 
   - name: Graphitex Admin
-    url: https://admin.graphitex.be/actuator/health
+    url: https://admin.graphitex.com/actuator/health
     expectedStatusCodes:
       - 200
     maxResponseTime: 5000
